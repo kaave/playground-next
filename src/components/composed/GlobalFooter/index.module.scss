@@ -1,0 +1,28 @@
+@use "variables/color";
+@use "variables/ease";
+@use "variables/font";
+@use "variables/layout";
+@use "variables/breakPoint";
+@use "mixins";
+
+.root {
+    position: relative;
+    color: color.$white;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background: color.$gray;
+}
+
+.inner {
+    position: relative;
+    max-width: breakPoint.$max;
+    padding: #{layout.$gutter * 3} #{layout.$gutter * 2};
+    margin: auto;
+}

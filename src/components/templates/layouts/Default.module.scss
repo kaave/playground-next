@@ -1,0 +1,7 @@
+@use "mixins";
+
+.Inner {
+    height: 100vh;
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden auto;
+}

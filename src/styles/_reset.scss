@@ -1,0 +1,33 @@
+@import "~normalize.css";
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    appearance: none;
+}

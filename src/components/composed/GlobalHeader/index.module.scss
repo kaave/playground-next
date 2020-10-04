@@ -1,0 +1,35 @@
+@use "mixins";
+@use "variables/color";
+@use "variables/font";
+@use "variables/ease";
+@use "variables/breakPoint";
+@use "variables/layout";
+@use "variables/zIndex";
+
+.root {
+    position: relative;
+    width: 100%;
+
+    @include mixins.sp {
+        overflow: hidden;
+    }
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    max-width: breakPoint.$max;
+    padding: 0 #{layout.$gutter * 2};
+    margin: auto;
+}

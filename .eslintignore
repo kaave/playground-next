@@ -1,0 +1,10 @@
+.build
+.next
+.vscode
+node_modules
+coverage
+out
+package.json
+public/static
+**/*.d.ts
+*.config.js

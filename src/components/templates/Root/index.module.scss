@@ -1,0 +1,23 @@
+@use "variables/color";
+@use "variables/ease";
+@use "variables/font";
+@use "variables/layout";
+@use "mixins";
+
+.section {
+    width: 100%;
+
+    & + & {
+        border-top: 1px solid #{color.$whiteDark};
+    }
+}
+
+.inner {
+    max-width: 1200px;
+    padding: #{layout.$gutter * 8} #{layout.$gutter * 5};
+    margin: auto;
+
+    @include mixins.sp {
+        padding: #{layout.$gutter * 5} #{layout.$gutter * 3};
+    }
+}

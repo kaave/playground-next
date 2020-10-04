@@ -1,0 +1,47 @@
+{
+    "ignorePaths": [".next/**", ".now/**", "coverage/**", "node_modules/**", "out/**", "public/**"],
+    "words": [
+        // 名詞
+        "kaave",
+        "kyousuke",
+        "junkjunctions",
+        "mincho",
+        "meiryo",
+        "hiragino",
+        "glsl",
+        "kaku",
+        "Martijn",
+        "Swaagman",
+        "Wantedly",
+        "Googlebot",
+        "Bingbot",
+        "Baiduspider",
+        "YandexBot",
+        "Exabot",
+        "facebot",
+        "stylis",
+        "nuxt",
+        "wasm",
+        "inno",
+        // external scopes
+        "stylelint",
+        "monokai",
+        "gtag",
+        "noninteractive",
+        "omori",
+        "futan",
+        "fontfaceobserver",
+        "prismjs",
+        "clsx",
+        "Unmount",
+        // web words
+        "tabindex",
+        // engineering words
+        "camelcase",
+        "palt",
+        "mixins",
+        "atrule",
+        // 造語
+        "aiue"
+    ]
+}
