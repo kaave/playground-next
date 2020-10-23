@@ -68,7 +68,7 @@ const nextOptions = {
   ...analyzerOptions,
   ...optimizedImagesOptions,
   cssLoaderOptions: { localIdentName: `${!production ? '[local]---' : ''}[hash:base64:5]` },
-  sassOptions: { includePaths: [path.resolve(__dirname, 'src', 'styles')] },
+  sassOptions: { includePaths: [path.resolve(__dirname, 'src', 'lib', 'styles')] },
   reactStrictMode: true,
   // ...workboxOptions,
   // exportPathMap: async (defaultPathMap) => {

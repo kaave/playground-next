@@ -23,6 +23,7 @@
         "nuxt",
         "wasm",
         "inno",
+        "ukitacho",
         // external scopes
         "stylelint",
         "monokai",

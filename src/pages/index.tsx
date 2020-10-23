@@ -1,15 +1,12 @@
-import React from 'react';
+import React, { ComponentProps } from 'react';
 import type { GetStaticProps } from 'next';
 
-import { RootTemplate } from '@components/templates/Root';
+import { RootPage } from '@contexts/root';
 
-type Props = {
-  message: string;
-};
+type Props = ComponentProps<typeof RootPage>;
 
-const IndexPage = ({ message }: Props) => <RootTemplate message={message} />;
+const IndexPage = ({ message }: Props) => <RootPage message={message} />;
 
 export default IndexPage;
 
-export const getStaticProps: GetStaticProps<Props> = async () =>
-  new Promise((resolve) => resolve({ props: { message: '' } }));
+export const getStaticProps: GetStaticProps<Props> = async () => new Promise((resolve) => resolve({ props: {} }));
