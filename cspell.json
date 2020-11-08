@@ -35,6 +35,8 @@
         "prismjs",
         "clsx",
         "Unmount",
+        "unfetch",
+        "abortcontroller",
         // web words
         "tabindex",
         // engineering words
@@ -43,6 +45,7 @@
         "mixins",
         "atrule",
         "usecase",
+        "abortable",
         // 造語
         "aiue"
     ]
