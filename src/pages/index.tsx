@@ -5,7 +5,7 @@ import { isOk, unwrapOk } from '@kaave/result';
 
 import { RootPage } from '@contexts/root';
 import { findAllTagsFactory } from '@contexts/common/externals/repositories/findAllTags';
-import { findAllTagsFromApi } from '@contexts/common/externals/drivers/loadTags/api';
+import { findAllTagsFromApi } from '@contexts/common/externals/drivers/findAllTags/api';
 import { loadAllTagsUsecaseFactory } from '@contexts/common/applications/usecases/Tag/loadAllTags';
 
 type Props = ComponentProps<typeof RootPage>;
@@ -22,9 +22,5 @@ const usecase = loadAllTagsUsecaseFactory(repository);
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const result = await usecase();
-  if (isOk(result)) {
-    return { props: { tags: unwrapOk(result) } };
-  } else {
-    return { props: {} };
-  }
+  return isOk(result) ? { props: { tags: unwrapOk(result) } } : { props: {} };
 };

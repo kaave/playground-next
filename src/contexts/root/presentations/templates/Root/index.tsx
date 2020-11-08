@@ -1,4 +1,5 @@
 import { Tag } from '@contexts/common/domains/valueObjects/tag';
+import Link from 'next/link';
 import React from 'react';
 
 import { TagList } from '../../monos/TagList';
@@ -8,10 +9,11 @@ type Props = {
 };
 
 export const RootTemplate = ({ tags }: Props) => {
-  console.log('hello', tags);
-
   return (
     <main id="main" className="main" role="main">
+      <Link href="/articles">
+        <a>to Articles</a>
+      </Link>
       <TagList tags={tags} />
     </main>
   );

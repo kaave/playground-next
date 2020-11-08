@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useReducer } from 'react';
 import type { ReducerState } from 'react';
 
 import { findAllTagsFactory } from '@contexts/common/externals/repositories/findAllTags';
-import { findAllTagsFromApi } from '@contexts/common/externals/drivers/loadTags/api';
+import { findAllTagsFromApi } from '@contexts/common/externals/drivers/findAllTags/api';
 import { loadAllTagsUsecaseFactory } from '@contexts/common/applications/usecases/Tag/loadAllTags';
 import { isOk, unwrapErr, unwrapOk } from '@kaave/result';
 import { RootTemplate } from './presentations/templates/Root';
