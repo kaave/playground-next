@@ -52,7 +52,7 @@ module.exports = {
     // if の中で return したあとの else を禁止 無効化 型ガードと相性が悪い
     'no-else-return': 'off',
     // !! でbooleanへキャストするのを警告
-    'no-extra-boolean-cast': ['off'],
+    'no-extra-boolean-cast': 'off',
     // スコープ外で宣言済みの命名を使い回すの禁止 無効化 わかってます
     'no-shadow': 'off',
     // useDispatchとuseSelectorは強すぎるので警告
@@ -112,9 +112,9 @@ module.exports = {
     ],
 
     // 端折った名前を禁止するのは管理しづらいのでやめ
-    'unicorn/prevent-abbreviations': ['off'],
+    'unicorn/prevent-abbreviations': 'off',
     // ファイル名縛りは融通がきかないのでやめ
-    'unicorn/filename-case': ['off'],
+    'unicorn/filename-case': 'off',
     // getElementByIdとかを一切禁止してquerySelectorオンリーにするのはやりすぎでは
     'unicorn/prefer-query-selector': 'off',
     // 組み込み型は必ずnewでインスタンス生成 無効化 range作るのがだるい
@@ -129,6 +129,11 @@ module.exports = {
     'unicorn/no-fn-reference-in-iterator': 'off',
     // 関数内の関数定義はよっぽどのことがないと外に出すよう警告 無効化 わかってます
     'unicorn/consistent-function-scoping': 'off',
+    // 読みづらいから forEach 禁止 無効化 いやいや
+    'unicorn/no-array-for-each': 'off',
+    // iteration する method の引数によそで定義した callback 渡すの禁止 無効化 よけいなお世話すぎる
+    'unicorn/no-array-callback-reference': 'off',
+
 
     /*
      * react
